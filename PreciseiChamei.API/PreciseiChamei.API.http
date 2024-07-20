@@ -1,0 +1,6 @@
+@PreciseiChamei.API_HostAddress = http://localhost:5022
+
+GET {{PreciseiChamei.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
