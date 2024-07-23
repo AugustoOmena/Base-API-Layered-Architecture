@@ -14,6 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Controllers\" />
       <Folder Include="Services\" />
       <Folder Include="Shared\Behavior\" />
       <Folder Include="Shared\Exceptions\" />
@@ -24,6 +25,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\PreciseiChamei.Domain\PreciseiChamei.Domain.csproj" />
+      <ProjectReference Include="..\PreciseiChamei.Persistence\PreciseiChamei.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\UsersController.cs" />
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
     </ItemGroup>
 
 </Project>
