@@ -13,6 +13,6 @@ public class UserRepository : BaseRepository<User>, IUserRepository
 
     public async Task<User> GetByEmail(string email, CancellationToken cancellationToken)
     {
-        return await Context.Users.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
+        return await Context.Users.FirstOrDefaultAsync(x => x.Email == email, cancellationToken) ?? throw new InvalidOperationException();
     }
 }

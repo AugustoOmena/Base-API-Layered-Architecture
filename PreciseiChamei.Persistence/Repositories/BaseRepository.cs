@@ -34,7 +34,7 @@ public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
 
     public async Task<T> Get(Guid id, CancellationToken cancellationToken)
     {
-        return await Context.Set<T>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+        return await Context.Set<T>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken) ?? throw new InvalidOperationException();
     }
 
     public async Task<List<T>> GetAll(CancellationToken cancellationToken)

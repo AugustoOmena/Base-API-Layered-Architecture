@@ -3,7 +3,7 @@ using PreciseiChamei.Persistence.Context;
 
 namespace PreciseiChamei.Persistence.Repositories;
 
-public class UnitOfWork : IUnityOfWork
+public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _context;
 
@@ -11,7 +11,6 @@ public class UnitOfWork : IUnityOfWork
     {
         _context = context;
     }
-    
     
     public async Task Commit(CancellationToken cancellationToken)
     {
