@@ -8,11 +8,11 @@ namespace PreciseiChamei.API.UseCases.CreateUser;
 public class CreateUserHandler :
     IRequestHandler<CreateUserRequest, CreateUserResponse>
 {
-    private readonly IUnityOfWork _unityOfWork;
+    private readonly IUnitOfWork _unityOfWork;
     private readonly IUserRepository _userRepository;
     private readonly IMapper _mapper;
 
-    public CreateUserHandler(IUnityOfWork unityOfWork, IUserRepository userRepository, IMapper mapper)
+    public CreateUserHandler(IUnitOfWork unityOfWork, IUserRepository userRepository, IMapper mapper)
     {
         _unityOfWork = unityOfWork;
         _userRepository = userRepository;
