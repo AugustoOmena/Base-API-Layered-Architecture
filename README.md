@@ -1,4 +1,4 @@
-<h1 align="center">Base-API-Layered-Architecture</h1>
+<h1 align="center">Clean API Architecture</h1>
 
 
 <p align="center">
@@ -16,14 +16,14 @@
 
 - **Layered Architecture**: Clear separation of concerns between layers (e.g., Presentation, Business, Data Access).
 - **.NET 8.0**: Latest .NET version with performance improvements.
-- **PostgreSQL**: Pre-configured integration with PostgreSQL database.
+- **PostgreSQL 16**: Pre-configured integration with PostgreSQL database.
 - **Extensible**: Easy to extend and adapt for various types of APIs.
 - **Best Practices**: Implements good coding practices like dependency injection and repository pattern.
 
 ## Technologies Used
 
 - **.NET 8.0**
-- **PostgreSQL**
+- **PostgreSQL 16**
 - **Entity Framework Core**
 - **Dependency Injection**
 - **Repository Pattern**
